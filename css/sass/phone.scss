@@ -1,0 +1,166 @@
+@import './sass/global.scss';
+
+
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+	display: grid;
+	justify-items: center;
+	font-family: Rubik, sans-serif;
+	.figure {
+		grid-row: 1;
+    	grid-column: 1;
+		background: linear-gradient(45deg, $primary-color, $primary-color-light);;
+		border: 1px solid #9b73fc;
+		width: 50%;
+		height: 300px;
+		border-radius: 0 0 235px 0;
+		justify-self: flex-start;
+	}
+	.phone {
+		grid-row: 1;
+		grid-column: 1;
+		z-index: 0;
+		width: 250px;
+		min-height: 430px;
+		display: grid;
+		font-family: Rubik, sans-serif;
+		margin-top: 5%;
+		border: 7px solid $light-color;
+		border-radius: 25px;
+		background-color: $light-color;
+		box-sizing: border-box;
+		transition: border 0.2s ease-in;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+		.nav-bar {
+			height: fit-content;
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: 1fr 1fr 10%;
+			column-gap: 1%;
+			border-top: 3px solid $light-color;
+			background: linear-gradient(45deg, $primary-color, $primary-color-light);
+			border-radius: 25px 25px 0 0;
+			.notch {
+				width: 100px;
+				height: 15px;
+				grid-column-start: 4;
+				margin-left: 16%;
+				background-color: $light-color;
+				border-bottom-left-radius: 20px;
+				border-bottom-right-radius: 20px;
+			}
+			.back-button {
+				@include button();
+			}
+			.user-pic {
+				grid-row-start: 2;
+				grid-column: 3;
+				align-self: center;
+				width: 25px;
+				height: 25px;
+				border: 1px solid $screen-background;
+				border-radius: 15px;
+			}
+			.user {
+				grid-column: 5;
+				align-self: flex-start;
+				font-weight: 500;
+				color: #f6d8ff;
+				@include paragraph();
+			}
+			.user-state {
+				font-weight: 400;
+				color: #ddd3e8;
+				@include paragraph();
+			}
+			.menu-button {
+				grid-column: 11;
+				@include button();
+			}
+		}
+		.chat-section {
+			display: grid;
+			background-color: $screen-background;
+			.from-me {
+				justify-self: end;
+				border-radius: 15px 15px 1px 15px;
+				color: $text-color-two;
+				background-color: $chat-buble-two;
+				@include chat-bubble();
+			}
+			.from-them {
+				border-radius: 15px 15px 15px 1px;
+				color: $text-color;
+				background-color: $chat-buble;
+				@include chat-bubble();
+			}
+			.dog-pictures {
+				justify-self: end;
+				.dog-pic {
+					width: 50px;
+					height: 50px;
+					border-radius: 15px;
+				}
+			}
+			.price-bubble {
+				display: grid;
+				align-items: center;
+				margin-bottom: 3%;
+				font-weight: 500;
+				border-radius: 15px 15px 15px 1px;
+				color: $screen-background;
+				background: linear-gradient(45deg, #de7bfd, #9b73fc);
+				width: 60%;
+				font-size: 9px;
+				padding: 5px 10px;
+				.element-position {
+					grid-row: 1;
+				}
+			}
+			.input-bar {
+				display: grid;
+				grid-template-rows: 1;
+				align-items: center;
+				justify-items: center;
+				height: 90%;
+				border-radius: 25px;
+				background-color: white;
+				p {
+					grid-row: 1;
+					color: #848484;
+				}
+				i {
+					grid-row: 1;
+					color: $dark-color;
+				}
+			}
+		}
+	}
+	.page-info {
+		grid-column: 1;
+		grid-row: 2;
+		z-index: 0;
+		display: grid;
+		justify-items: center;
+		color: $text-color;
+		h1 {
+			align-self: center;
+			margin-bottom: 0;
+		}
+		p {
+			margin: 0 5% 5% 5%;
+		}
+	}
+	.figure-two {
+		grid-row-start: 1;
+		grid-row-end: 3;
+		align-self: end;
+    	grid-column: 1;
+		background: $screen-background;
+		width: 50%;
+		height: 300px;
+		border-radius: 235px 0 0 0;
+		justify-self: flex-end;
+	}
+}
