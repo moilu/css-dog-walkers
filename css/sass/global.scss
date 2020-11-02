@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+$primary-color       : #9b73fc;
+$primary-color-light : #de7bfd;
+$screen-background   : #f5f3f8;
+$chat-buble          : #f0e9f7;
+$chat-buble-two      : #fffffd;
+$text-color          : #766b7d;
+$text-color-two      : #544f4f;
+
+$shadow-level        : rgba(0,0,0,0.4);
+$dark-color          : rgb(28,28,28);
+$light-color         : rgb(251,251,251);
+
+@mixin button {
+	grid-row-start: 2;
+	align-self: center;
+	width: 10%;
+	height: 70%;
+	background: none;
+	border: none;
+	color: $screen-background;
+}
+
+@mixin paragraph {
+	font-family: Rubik, sans-serif;
+	grid-column-start: 4;
+	grid-row-start: 2;
+	margin-block-start: auto;
+}
+
+@mixin chat-bubble {
+	width: 60%;
+	height: fit-content;
+	font-size: 0.5em;
+	margin: 0;
+	padding: 5px 10px;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Rubik, sans-serif;
+	background: $light-color;
+}
