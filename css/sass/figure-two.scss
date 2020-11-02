@@ -1,0 +1,16 @@
+
+
+
+
+
+.figure-two {
+	grid-row-start: 1;
+	grid-row-end: 3;
+	align-self: end;
+    grid-column: 1;
+	background: $screen-background;
+	width: 50%;
+	height: 300px;
+	border-radius: 235px 0 0 0;
+	justify-self: flex-end;
+}

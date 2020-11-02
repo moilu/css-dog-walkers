@@ -1,0 +1,11 @@
+
+
+.figure {
+	grid-row: 1;
+	grid-column: 1;
+	background: linear-gradient(45deg, $primary-color, $primary-color-light);;
+	border: 1px solid #9b73fc;
+	width: 50%;
+	border-radius: 0 0 235px 0;
+	justify-self: flex-start;
+}

@@ -1,0 +1,17 @@
+.page-info {
+	grid-column: 1;
+	grid-row: 2;
+	z-index: 0;
+	display: grid;
+	margin-bottom: auto;
+	justify-items: center;
+	color: $text-color;
+	h1 {
+		align-self: center;
+		margin-bottom: 5%;
+	}
+	p {
+		margin: 0 5% 5% 5%;
+		text-align: center;
+	}
+}

@@ -15,8 +15,8 @@ $light-color         : rgb(251,251,251);
 @mixin button {
 	grid-row-start: 2;
 	align-self: center;
-	width: 15px;
-	height: 15px;
+	width: 10%;
+	height: 70%;
 	background: none;
 	border: none;
 	color: $screen-background;
@@ -24,7 +24,6 @@ $light-color         : rgb(251,251,251);
 
 @mixin paragraph {
 	font-family: Rubik, sans-serif;
-	font-size: 12px;
 	grid-column-start: 4;
 	grid-row-start: 2;
 	margin-block-start: auto;
@@ -32,7 +31,9 @@ $light-color         : rgb(251,251,251);
 
 @mixin chat-bubble {
 	width: 60%;
-	font-size: 9px;
+	height: fit-content;
+	font-size: 0.5em;
+	margin: 0;
 	padding: 5px 10px;
 }
 
