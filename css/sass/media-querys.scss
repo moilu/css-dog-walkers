@@ -32,9 +32,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .wrapper {
-        grid-template-rows: repeat(3, 1fr);
-    }
     .phone {
         grid-column:2;
         grid-row: 2;
@@ -47,14 +44,17 @@
         align-self: center;
     }
     .figure {
-        border-radius: 0 0 290px 5px;
-        width: 149%;
-        height: 245%;
+        border-radius: 0 0 375px 5px;
+        // width: 149%;
+        // height: 400%;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        width: 100%;
     }
     .figure-two {
-        grid-row: 3;
+        grid-row-start: 4;
+        grid-row-end: 1;
         grid-column: 6;
-        height: 270%;
-        width: 150%;
+        width: 100%;
     }
 }
