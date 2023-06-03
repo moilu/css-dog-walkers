@@ -14,6 +14,4 @@ https://moilu.github.io/css-dog-walkers/
 
 ## Contacto
 
-Email moisesluna0390@gmail.com
-
 Twitter @moilu6
